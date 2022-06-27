@@ -4,7 +4,7 @@ A simple P2P profile for Mythic Agents.
 
 In order to use it, another Agent needs to `link` to the Agent using it.
 
-## Websockets C2 Workflow
+## TCP C2 Workflow
 
 ```mermaid
 sequenceDiagram
