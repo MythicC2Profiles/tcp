@@ -1,4 +1,4 @@
-from mythic_c2_container.C2ProfileBase import *
+from mythic_container.C2ProfileBase import *
 
 
 class TCP(C2Profile):
