@@ -1,4 +1,6 @@
 from mythic_container.C2ProfileBase import *
+from pathlib import Path
+import os
 
 
 class TCP(C2Profile):
@@ -7,6 +9,8 @@ class TCP(C2Profile):
     author = "@djhohnstein"
     is_p2p = True
     is_server_routed = True
+    server_binary_path = Path(os.path.join(".", "c2_code"))
+    server_folder_path = Path(os.path.join(".",  "c2_code"))
     parameters = [
         C2ProfileParameter(
             name="port",
