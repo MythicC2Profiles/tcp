@@ -5,8 +5,8 @@ import os
 
 class TCP(C2Profile):
     name = "tcp"
-    description = "Communication over TCP sockets."
-    author = "@djhohnstein"
+    description = "Communication over TCP sockets with a specific packet structure.\nCheck out the docs for more information."
+    author = "@djhohnstein, @its_a_feature_"
     is_p2p = True
     is_server_routed = True
     server_binary_path = Path(os.path.join(".", "c2_code"))
@@ -14,7 +14,7 @@ class TCP(C2Profile):
     parameters = [
         C2ProfileParameter(
             name="port",
-            description="Port to start Apollo on.",
+            description="Port for the agent to bind to",
             format_string="[0-65535]{1}",
             randomize=True,
             required=False,
@@ -29,9 +29,9 @@ class TCP(C2Profile):
         C2ProfileParameter(
             name="encrypted_exchange_check",
             description="Perform Key Exchange",
-            choices=["T", "F"],
+            default_value=True,
             required=False,
-            parameter_type=ParameterType.ChooseOne,
+            parameter_type=ParameterType.Boolean,
         ),
         C2ProfileParameter(
             name="AESPSK",
