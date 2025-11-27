@@ -6,7 +6,7 @@ weight = 5
 
 ## Summary
 
-This TCP Command and Control (C2) Profile is a Peer-to-Peer (P2P) profile for allowing inter-agent communications. 
+This TCP Command and Control (C2) Profile is a Peer-to-Peer (P2P) profile for allowing inter-agent communications.
 The format for messages on the wire is simple. We have `messageA`, a properly formatted base64 Mythic message, that we need to send over the wire in 1KB chunks. Each chunked packet looks like the following:
 
 | Byte Size            | Meaning                                                                              |
@@ -33,6 +33,10 @@ This profile currently only has a few configuration options:
 ### port
 
 Which port the agent should bind to. This is currently a bind-only profile. In the future this is likely to change to allow specifying a direction, but for now it's bind-only.
+
+### localhost_only
+
+Whether the agent should bind to localhost only.
 
 ### killdate
 
