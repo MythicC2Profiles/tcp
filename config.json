@@ -5,6 +5,6 @@
   "exclude_documentation_c2": false,
   "exclude_agent_icons": false,
   "remote_images": {
-    "tcp": "ghcr.io/mythicc2profiles/tcp:v0.0.0.2"
+    "tcp": "ghcr.io/mythicc2profiles/tcp:v0.0.0.3"
   }
 }
