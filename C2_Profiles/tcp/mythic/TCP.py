@@ -20,6 +20,13 @@ class TCP(C2Profile):
             required=False,
         ),
         C2ProfileParameter(
+            name="localhost_only",
+            description="Bind to localhost only",
+            default_value=False,
+            required=False,
+            parameter_type=ParameterType.Boolean,
+        ),
+        C2ProfileParameter(
             name="killdate",
             description="Kill Date",
             parameter_type=ParameterType.Date,
