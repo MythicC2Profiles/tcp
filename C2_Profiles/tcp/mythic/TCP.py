@@ -9,6 +9,7 @@ class TCP(C2Profile):
     author = "@djhohnstein, @its_a_feature_"
     is_p2p = True
     is_server_routed = True
+    semver = "0.0.2"
     server_binary_path = Path(os.path.join(".", "c2_code"))
     server_folder_path = Path(os.path.join(".",  "c2_code"))
     parameters = [
